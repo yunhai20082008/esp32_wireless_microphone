@@ -24,15 +24,15 @@ void setup()
   Serial.print(WiFi.localIP());
   Serial.println("");
 
-  // startup MDNS
-  if (!MDNS.begin(MDNS_DOMAIN))
-  {
-    Serial.println("MDNS.begin failed");
-  }
-  Serial.println("Creating microphone");
+// startup MDNS
+//  if (!MDNS.begin(MDNS_DOMAIN))
+// {
+//   Serial.println("MDNS.begin failed");
+// }
+// Serial.println("Creating microphone");
   Application *application = new Application();
   application->begin();
-}
+// }
 
 void loop()
 {
